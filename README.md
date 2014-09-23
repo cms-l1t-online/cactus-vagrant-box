@@ -52,7 +52,25 @@ sudo yum groupinstall uhal triggersupervisor -y
 exit
 ```
 
-Now the box is ready to be packed.
+
+Now the box is ready to be used and/or packed.
+### Using the vagrant box
+```
+# cd into your project area
+cd <project area>
+# start vagrant
+vagrant up
+# ssh into the box
+vagrant ssh
+# you might need to set the library path
+export LD_LIBRARY_PATH:/opt/cactus/lib:$LD_LIBRARY_PATH
+# check if the installed uhal can find all libraries:
+ldd /opt/cactus/lib/libcactus_uhal_uhal.so
+# there should be no entries with 'not found'
+```
+
+### Packing the box
+UNDER CONSTRUCTION
 ```
 # stop the box
 vagrant halt
