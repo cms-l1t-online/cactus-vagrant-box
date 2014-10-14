@@ -44,7 +44,7 @@ sudo cp xdaq.repo /etc/yum.repos.d/xdaq.repo
 wget https://copy.com/8rvgtuALTJJh/cactus/vagrant/wandisco.repo
 sudo cp wandisco.repo /etc/yum.repos.d/wandisco.repo
 # install command-line editor of your choice and repository software
-sudo yum install nano svn git unzip -y
+sudo yum install nano svn git unzip python-devel -y
 # install micro-HAL and Trigger Supervisor (TS)
 # if you have a previous version of uhal or TS please remove it first:
 # sudo yum groupremove uhal triggersupervisor 
