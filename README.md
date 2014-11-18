@@ -49,6 +49,8 @@ sudo yum install nano svn git unzip python-devel -y
 # if you have a previous version of uhal or TS please remove it first:
 # sudo yum groupremove uhal triggersupervisor 
 sudo yum groupinstall uhal triggersupervisor -y
+# needed for xdaq Finite State Machine
+sudo yum install daq-toolbox-devel -y
 exit
 ```
 
