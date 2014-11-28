@@ -1,5 +1,5 @@
 # cactus-vagrant-box
-Vagrant box instrutctions for L1 Online Software (cactus)
+Vagrant box instructions for L1 Online Software (cactus)
 
 ## General information
  - https://svnweb.cern.ch/trac/cactus/wiki/DevInstructions#NightlyBuildMachineBootstrapconfiguration
@@ -18,6 +18,8 @@ A list of general boxes can be found on http://www.vagrantbox.es .
 ```
 # go into your project area
 vagrant box add SL6-minimal http://lyte.id.au/vagrant/sl6-64-lyte.box
+# this will make sure that your virtual box guest additions are always up-to-date
+vagrant plugin install vagrant-vbguest
 # modify RAM to whatever you need in the boxes vagrant file (under ~/.vagrant.d/boxes/SL6-minimal)
 vb.customize ["modifyvm", :id, "--memory", "1024”]
 # cd into the project directory
