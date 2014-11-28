@@ -51,6 +51,8 @@ sudo yum install nano svn git unzip python-devel -y
 sudo yum groupinstall uhal triggersupervisor -y
 # needed for xdaq Finite State Machine
 sudo yum install daq-toolbox-devel -y
+# or (for all XDAQ packages):
+#  sudo yum install daq-* --exclude=*debug* -y
 exit
 ```
 
