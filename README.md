@@ -32,16 +32,16 @@ vagrant ssh
 sudo yum update -y
 # get the nightly repos
 # micro-HAL
-wget https://copy.com/8rvgtuALTJJh/cactus/vagrant/uhal-nightly.repo
+wget --no-check-certificate https://copy.com/8rvgtuALTJJh/cactus/vagrant/uhal-nightly.repo
 sudo cp uhal-nightly.repo /etc/yum.repos.d/uhal-nightly.repo
 # trigger supervisor
-wget https://copy.com/8rvgtuALTJJh/cactus/vagrant/ts-nightly.repo
+wget --no-check-certificate https://copy.com/8rvgtuALTJJh/cactus/vagrant/ts-nightly.repo
 sudo cp ts-nightly.repo /etc/yum.repos.d/ts-nightly.repo
 # XDAQ
-wget https://copy.com/8rvgtuALTJJh/cactus/vagrant/xdaq.repo
+wget --no-check-certificate https://copy.com/8rvgtuALTJJh/cactus/vagrant/xdaq.repo
 sudo cp xdaq.repo /etc/yum.repos.d/xdaq.repo
 # WANDISCO SVN (SVN 1.8)
-wget https://copy.com/8rvgtuALTJJh/cactus/vagrant/wandisco.repo
+wget --no-check-certificate https://copy.com/8rvgtuALTJJh/cactus/vagrant/wandisco.repo
 sudo cp wandisco.repo /etc/yum.repos.d/wandisco.repo
 # install command-line editor of your choice and repository software
 sudo yum install nano svn git unzip python-devel -y
