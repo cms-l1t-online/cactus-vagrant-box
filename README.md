@@ -55,6 +55,9 @@ sudo yum groupinstall uhal triggersupervisor -y
 sudo yum install daq-toolbox-devel -y
 # or (for all XDAQ packages):
 #  sudo yum install daq-* --exclude=*debug* -y
+# you might also need
+# sudo yum install uuid-devel
+# sudo ln -s /lib64/libuuid.so.1 /lib64/libuuid.so
 exit
 ```
 
