@@ -51,10 +51,8 @@ sudo yum install nano svn git unzip python-devel -y
 # if you have a previous version of uhal or TS please remove it first:
 # sudo yum groupremove uhal triggersupervisor 
 sudo yum groupinstall uhal triggersupervisor -y
-# needed for xdaq Finite State Machine
-sudo yum install daq-toolbox-devel -y
-# or (for all XDAQ packages):
-#  sudo yum install daq-* --exclude=*debug* -y
+# minimal xdaq packages for swatch
+sudo yum install daq-xdata-devel daq-toolbox daq-toolbox-devel daq-log4cplus daq-log4cplus-devel daq-xcept-devel daq-config daq-xerces -y
 # you might also need
 # sudo yum install uuid-devel
 # sudo ln -s /lib64/libuuid.so.1 /lib64/libuuid.so
